@@ -8,7 +8,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family:  Barlow,sans-serif!important;;
+    font-family: Copperplate !important;
     font-size:14px;
 }
 
@@ -85,7 +85,7 @@ color:#fff;
     padding-top: 15px;
 }
 .navbar-default {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    background: #000 none repeat scroll 0 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     background-color: #ffa100;
@@ -112,19 +112,19 @@ transition: all 0.35s ease 0s;
     display: block;
     float: none;
     font-size: 18px;
-    margin: 150px auto;
+    margin: 250px auto;
     padding: 42px !important;
     text-align: center;
     width: 700px;
 }
 .header-text h2 {
     font-size: 70px;
-	font-family: Barlow,sans-serif!important;
+	font-family: Copperplate !important;
 	margin-bottom:30px;
 }
 .header-text h3 {
     font-size: 30px;
-	font-family: Barlow,sans-serif!important;
+	font-family: Copperplate !important;
 	margin-bottom:30px;
 }
 .header-text p {
@@ -201,7 +201,8 @@ transition: all 0.35s ease 0s;
 /*----------- team ------------*/
 
 #team {
-   background: url("../img/team-bg.jpg") no-repeat scroll center bottom / cover ;
+   /* background: url("../img/team-bg.jpg") no-repeat scroll center bottom / cover ; */
+   background: #e19100 scroll center bottom / cover;
     color: #fff;
     overflow: hidden;
 	padding:100px 0 220px;
@@ -280,7 +281,7 @@ margin:20px 0 0 0px;
     font-size: 20px;
     padding: 10px 0;
     text-align: left;
-	font-family: Barlow,sans-serif!important;
+	font-family: Copperplate !important;
 }
 /*----------- for box ------------*/
 .for-box
@@ -499,6 +500,7 @@ transform: skewY(171.5deg);
 .wbox  p
 {
 padding:10px;
+font-weight: bold;
 }
 /*----------- owl ------------*/
 #owl-demo .owl-item div{
@@ -598,7 +600,8 @@ padding:10px;
 .element-item {
 width:25%;
 height:320px;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    /* background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important; */
+	background: #fff none repeat scroll 0 0 !important;
 }
 /*----------- blog single ------------*/
 .blog-header {

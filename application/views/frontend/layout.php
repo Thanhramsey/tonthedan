@@ -13,6 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Tôn Thế Dân</title>
+	<link rel="icon" type="image/x-icon" href="public/assets/img/favicon.png">
 
     <!-- =============== Bootstrap Core CSS =============== -->
     <link rel="stylesheet" href="public/assets/css/bootstrap.min.css" type="text/css">
@@ -71,16 +72,16 @@
                             <a class="page-scroll" href="#Services">Dịch vụ</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#Gallery">Hình ảnh</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#blog">Blog</a>
+                            <a class="page-scroll" href="#Gallery">Sản phẩm</a>
                         </li>
 						<li>
                             <a class="page-scroll" href="#about">Thông tin</a>
                         </li>
 						<li>
                             <a class="page-scroll" href="#contact">Liên hệ</a>
+                        </li>
+						 <li>
+                            <a href="tin-tuc">Tin tức</a>
                         </li>
                     </ul>
                 </div>
@@ -108,7 +109,7 @@
 				 <div>
 				  <div class="col-xs-12 col-sm-6 col-md-6 header-text">
                     <h2 class="wow bounceIn animated" data-wow-delay=".40s"><span>THẾ DÂN</span></h2>
-                    <h3 class="wow bounceIn animated" data-wow-delay=".50s">Chuyên kinh doanh tôn Mát (cách âm, cách nhiệt), tôn giả ngói (2 loại), tôn 5 sóng, Xà gồ từ C80 đến C300 và sắt thép. Gia công vòm, máng xối...</h3>
+                    <p class="wow bounceIn animated" data-wow-delay=".50s">Chuyên kinh doanh tôn Mát (cách âm, cách nhiệt), tôn giả ngói (2 loại), tôn 5 sóng, Xà gồ từ C80 đến C300 và sắt thép. Gia công vòm, máng xối...</p>
 					</div>
 				</div>
 				</div>
@@ -171,7 +172,7 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 				</div>
 				<div class="wbox">
 					<strong></strong>
-					<p>Tư vấn lắp đặt, thiết kế cho công trình theo yêu cầu của khách hàng.</p>
+					<p>Tư vấn lắp đặt, thiết kế cho công trình theo yêu cầu của <br/>khách hàng.</p>
 					<a href="#" class="clr2-a">+</a>
 				</div>
 
@@ -221,7 +222,7 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 				</div>
 			 <div class="col-xs-12 col-sm-3 col-md-3 wow fadeInUp animated" data-wow-delay=".1s">
                             <i class="fa fa-clock-o size"></i>
-							<h2>20</h2>
+							<h2>14</h2>
 							<span>Năm trong nghề</span>
                   </div>
                <div class="col-xs-12 col-sm-3 col-md-3 wow fadeInUp animated" data-wow-delay=".2s">
@@ -248,128 +249,146 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
     <section id="Gallery" class="wow flipInX animated" data-wow-delay=".5s">
 	<div class="title">
 				<h2>Thư viện</h2>
-				<p>Hình ảnh sản phẩm cung cấp</p>
+				<p>Sản phẩm cung cấp</p>
 				</div>
 
 	<div class="big-demo go-wide" data-js-module="filtering-demo">
 	<div class="container">
             <div class="row">
   <div class="filter-button-group button-group js-radio-button-group">
-    <button class="button is-checked" data-filter="*">show all</button>
-    <button class="button" data-filter=".webdesign">Web design</button>
-    <button class="button" data-filter=".ecommerce">E-commerce</button>
-	 <button class="button" data-filter=".cms">Cms</button>
-	<button class="button" data-filter=".logo">Logo</button>
+    <button class="button is-checked" data-filter="*">Tất cả</button>
+    <button class="button" data-filter=".ton">Tôn</button>
+    <button class="button" data-filter=".ngoi">Ngói</button>
+	 <button class="button" data-filter=".sat">Sắp thép, xà gồ</button>
+	<!-- <button class="button" data-filter=".logo">Logo</button> -->
   </div>
 </div>
 </div>
 
 
   <div class="grid baguetteBoxThree gallery">
-      <div class="element-item transition webdesign " data-category="post-transition">
-	  <a href="public/assets/img/gallery/emp-1.jpg">
-	  <img src="public/assets/img/gallery/emp-1.jpg"/>
+      <div class="element-item transition ton " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ton/1.jpg">
+	  <img src="public/assets/img/gallery/ton/1.jpg"/>
 		<div class="hover-img">
-		<h2>Website Design</h2>
+		<h2>Sóng ngói tây</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 	  </a>
       </div>
-      <div class="element-item post-transition ecommerce " data-category="post-transition">
-	  <a href="public/assets/img/gallery/emp-2.jpg">
-        <img src="public/assets/img/gallery/emp-2.jpg"/>
+      <div class="element-item post-transition ton " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ton/2.jpeg">
+	  <img src="public/assets/img/gallery/ton/2.jpeg"/>
 		<div class="hover-img">
-		<h2>E-commerce</h2>
+		<h2>Tôn lạnh xanh</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 	  </a>
       </div>
-      <div class="element-item post-transition webdesign " data-category="post-transition">
-	  <a href="public/assets/img/gallery/emp-3.jpg">
-		<img src="public/assets/img/gallery/emp-3.jpg"/>
+      <div class="element-item post-transition ton " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ton/3.jpeg">
+	  <img src="public/assets/img/gallery/ton/3.jpeg"/>
 		<div class="hover-img">
-		<h2>Website Design</h2>
+		<h2>Tôn lạnh xanh lục</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-	 <div class="element-item transition ecommerce " data-category="post-transition">
-	   <a href="public/assets/img/gallery/emp-4.jpg">
-	    <img src="public/assets/img/gallery/emp-4.jpg"/>
+	 <div class="element-item transition ton " data-category="post-transition">
+	 <a href="public/assets/img/gallery/ton/4.jpeg">
+	  <img src="public/assets/img/gallery/ton/4.jpeg"/>
 		<div class="hover-img">
-		<h2>E-commerce</h2>
+		<h2>Tôn lạnh đỏ</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-      <div class="element-item post-transition logo " data-category="post-transition">
-         <a href="public/assets/img/gallery/emp-5.jpg">
-	    <img src="public/assets/img/gallery/emp-5.jpg"/>
+      <div class="element-item post-transition ton " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ton/5.jpeg">
+	  <img src="public/assets/img/gallery/ton/5.jpeg"/>
 		<div class="hover-img">
-		<h2>Logo</h2>
+		<h2>Tôn giả ngói</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-      <div class="element-item post-transition cms " data-category="post-transition">
-		 <a href="public/assets/img/gallery/emp-6.jpg">
-	    <img src="public/assets/img/gallery/emp-6.jpg"/>
+      <div class="element-item post-transition ngoi " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ngoi/1.jpg">
+	  <img src="public/assets/img/gallery/ngoi/1.jpg"/>
 		<div class="hover-img">
-		<h2>CMS</h2>
+		<h2>Ngói sóng đỏ</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-	  <div class="element-item post-transition logo " data-category="post-transition">
-         <a href="public/assets/img/gallery/emp-7.jpg">
-	    <img src="public/assets/img/gallery/emp-7.jpg"/>
+	  <div class="element-item post-transition ngoi " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ngoi/2.jpg">
+	  <img src="public/assets/img/gallery/ngoi/2.jpg"/>
 		<div class="hover-img">
-		<h2>Logo</h2>
+		<h2>Ngói màu xanh lá</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-	  <div class="element-item transition cms " data-category="post-transition">
-	   <a href="public/assets/img/gallery/emp-8.jpg">
-	    <img src="public/assets/img/gallery/emp-8.jpg"/>
+	  <div class="element-item post-transition ngoi " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ngoi/3.jpg">
+	  <img src="public/assets/img/gallery/ngoi/3.jpg"/>
 		<div class="hover-img">
-		<h2>CMS</h2>
+		<h2>Ngói màu nâu</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-      <div class="element-item post-transition ecommerce " data-category="post-transition">
-         <a href="public/assets/img/gallery/emp-9.jpg">
-	    <img src="public/assets/img/gallery/emp-9.jpg"/>
+      <div class="element-item post-transition ngoi " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ngoi/4.jpg">
+	  <img src="public/assets/img/gallery/ngoi/4.jpg"/>
 		<div class="hover-img">
-		<h2>E-commerce</h2>
+		<h2>Ngói lớp đỏ</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-      <div class="element-item post-transition webdesign " data-category="post-transition">
-		 <a href="public/assets/img/gallery/emp-10.jpg">
-	    <img src="public/assets/img/gallery/emp-10.jpg"/>
+	  <div class="element-item post-transition ngoi " data-category="post-transition">
+	  <a href="public/assets/img/gallery/ngoi/5.jpg">
+	  <img src="public/assets/img/gallery/ngoi/5.jpg"/>
 		<div class="hover-img">
-		<h2>Web Design</h2>
+		<h2>Ngói lợp xi măng xanh</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-	  <div class="element-item post-transition logo " data-category="post-transition">
-         <a href="public/assets/img/gallery/emp-11.jpg">
-	    <img src="public/assets/img/gallery/emp-11.jpg"/>
+	  <div class="element-item post-transition sat " data-category="post-transition">
+         <a href="public/assets/img/gallery/sat/1.jpg">
+	    <img src="public/assets/img/gallery/sat/1.jpg"/>
 		<div class="hover-img">
-		<h2>Logo</h2>
+		<h2>Sắt, thép, xà gồ</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
       </div>
-	  <div class="element-item transition cms " data-category="post-transition">
-	   <a href="public/assets/img/gallery/emp-12.jpg">
-	    <img src="public/assets/img/gallery/emp-12.jpg"/>
+	  <div class="element-item post-transition sat " data-category="post-transition">
+         <a href="public/assets/img/gallery/sat/2.jpg">
+	    <img src="public/assets/img/gallery/sat/2.jpg"/>
 		<div class="hover-img">
-		<h2>CMS</h2>
+		<h2>Sắt, thép, xà gồ</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>
+		</a>
+      </div>
+	  <div class="element-item post-transition sat " data-category="post-transition">
+         <a href="public/assets/img/gallery/sat/3.jpg">
+	    <img src="public/assets/img/gallery/sat/3.jpg"/>
+		<div class="hover-img">
+		<h2>Sắt, thép, xà gồ</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>
+		</a>
+      </div>
+	  <div class="element-item post-transition sat " data-category="post-transition">
+         <a href="public/assets/img/gallery/sat/4.jpg">
+	    <img src="public/assets/img/gallery/sat/4.jpg"/>
+		<div class="hover-img">
+		<h2>Sắt, thép, xà gồ</h2>
 		<i class="fa fa-camera camera"></i>
 		</div>
 		</a>
@@ -381,8 +400,8 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 
 
 </section>
-	<section id="blog" class="">
-		<!-- =============== container =============== -->
+	<!-- <section id="blog" class="">
+		=============== container ===============
         <div class="container">
             <div class="row">
 				<div class="title">
@@ -433,17 +452,18 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
                   </div>
             </div>
         </div>
-		<!-- =============== container end =============== -->
-    </section>
+		=============== container end ===============
+    </section> -->
 	<!-- =============== About =============== -->
     <section id="about" class="">
 		<!-- =============== container =============== -->
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInDown animated" data-wow-delay=".5s">
-                   <h2>About Us</h2>
-				   <p>Lorem ipsum dolor sit amet, netus pellentesque mauris, non quis adipiscing aliquam tortor nulla, ut dolor, mauris sem ultricies sed tellus ut aliquam. Donec vel sollicitudin orci mi ut, neque aliquam vel vel nostrum enim tristique, magna rhoncus. Dapibus purus eget cubilia eget, in ut in mi dui ipsum odio, nullam vestibulum aliquam fusce, dignissim venenatis ultricies sed mattis non, metus a libero et. Imperdiet aliquet. Vivamus malesuada, ultrices convallis, diam vitae pellentesque volutpat ante vitae amet, ac leo, arcu duis venenatis in auctor sit suscipit. </p>
-				   <p>Integer sapien sed mauris nec, volutpat risus leo placerat elit at aliquet, a egestas ultrices, vitae non amet lacus etiam, malesuada pellentesque scelerisque. Neque fermentum parturient ante pede, a dui ut ultricies luctus non nobis, amet nibh et. Diam nunc in eleifend commodo ante, amet quam integer dolor sit volutpat faucibus, sed sem, et amet sed, vestibulum mollit et a ac nullam. Eu nunc voluptas risus dui et pellentesque.</p>
+                   <h2>Về chúng tôi</h2>
+				   <p>Công ty Tôn Thế Dân là đơn vị chuyên sản xuất thép cán nguội, tôn kẽm, tôn lạnh, tôn màu, thép hộp mạ kẽm phục vụ cho ngành xây dựng công nghiệp và dân dụng, hạ tầng giao thông, thiết bị gia dụng. Công ty thành lập ngày 04/09/2009</p>
+				   <p>Với phương châm “Chất lượng - Uy tín - Phát triển vững bền”, công ty Cổ phần Tôn Thế Dân có những chính sách thường xuyên nghiên cứu thị trường trong và ngoài tỉnh, đẩy mạnh tái đầu tư dây chuyền công nghệ nhằm nâng cao chất lượng sản phẩm, tăng tính đa dạng, phong phú của sản phẩm qua đó khẳng định vị thế của thương hiệu Tôn Thế Dân trên thị trường, mở rộng thị trường xuất khẩu trong khu vực và hướng tới các thị trường xa hơn.</p>
+				   <p>Tôn Thế Dân luôn thực thi cam kết với các đối tác, khách hàng và người tiêu dùng về mục tiêu nâng cao chất lượng sản phẩm, chất lượng dịch vụ với giá thành cạnh tranh nhằm đáp ứng tối đa nhu cầu của thị trường và tạo nên uy tín cho thương hiệu.</p>
                   </div>
                   <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
                      <img src="public/assets/img/about-img.jpg"/>
@@ -457,54 +477,54 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
         <div class="container">
             <div class="row">
 				<div class="title">
-				<h2>Our Team</h2>
-				<p>Meet some of our lovely, passionate, positive people.</p>
+				<h2>Đội ngũ chúng tôi</h2>
+				<!-- <p>Meet some of our lovely, passionate, positive people.</p> -->
 				</div>
                 <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown animated" data-wow-delay=".1s">
                    <div class="timg"><img src="public/assets/img/team-img1.jpg"/></div>
 				    <div class="t-box">
-				   <h3>MOHD SUBHAN</h3>
-				   <span>Creative Director </span>
+				   <h3>Nguyễn Thế Hoài</h3>
+				   <span>Giám đốc </span>
 				   <ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="wow fadeInUp animated" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
 				   </div>
                   </div>
 				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp animated" data-wow-delay=".2s">
                     <div class="timg"><img src="public/assets/img/team-img2.jpg"/></div>
 				   <div class="t-box">
-				   <h3>Mohd Rahman</h3>
-				   <span>Website & ui designer</span>
+				   <h3>Châu Thanh Chương</h3>
+				   <span>Kế Toán trưởng</span>
 				   <ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="wow fadeInUp animated" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
 				   </div>
                   </div>
 				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown animated" data-wow-delay=".3s">
                     <div class="timg"><img src="public/assets/img/team-img3.jpg"/></div>
 				   <div class="t-box">
-				   <h3>ZEENAT SUBHAN</h3>
-				   <span>Senior Developer</span>
+				   <h3>Phan Văn Cường</h3>
+				   <span>Đội trưởng</span>
 				   <ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="wow fadeInUp animated" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
 				   </div>
                   </div>
 				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp animated" data-wow-delay=".4s">
                     <div class="timg"><img src="public/assets/img/team-img4.jpg"/></div>
 				    <div class="t-box">
-				   <h3>MOHD SAIF</h3>
-				   <span>Content Writer</span>
+				   <h3>Trần Sơn Tùng</h3>
+				   <span>Tổ trưởng</span>
 				   <ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="wow fadeInUp animated" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
 				   </div>
                   </div>
@@ -518,7 +538,7 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 			    <div class="row">
                 <div class="title">
 				<h2>Contact</h2>
-				<p>Meet some of our lovely, passionate, positive people.</p>
+				<p>Vui lòng để lại thông tin để chúng tôi phục vụ bạn.</p>
 				</div>
 			</div>
 
@@ -526,14 +546,18 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 
 				<div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated" data-wow-delay=".1s">
 
-					<form action="#" method="post">
 						<div class="ajax-hidden">
-							<div class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+							<div class="col-xs-12 col-sm-4 col-md-4 form-group wow fadeInUp animated">
 								<label for="c_name" class="sr-only">Name</label>
 								<input type="text" placeholder="Name" name="name" class="form-control" id="name" required="">
 							</div>
 
-							<div data-wow-delay=".1s" class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+							<div class="col-xs-12 col-sm-4 col-md-4 form-group wow fadeInUp animated">
+								<label for="c_name" class="sr-only">SĐT</label>
+								<input type="text" placeholder="SĐT" name="sdt" class="form-control" id="sdt" required="">
+							</div>
+
+							<div data-wow-delay=".1s" class="col-xs-12 col-sm-4 col-md-4 form-group wow fadeInUp animated">
 								<label for="c_email" class="sr-only">Email</label>
 								<input type="email" placeholder="E-mail" name="email" class="form-control" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" placeholder="e.g. info@envato.com" required="">
 							</div>
@@ -542,10 +566,9 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 								<textarea placeholder="Message" rows="7" name="description" id="description" class="form-control" required=""></textarea>
 							</div>
 
-							<button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="submit">Send Message</button>
+							<button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="button" onclick="saveLienHe()">Send Message</button>
 						</div>
 						<div class="ajax-response"></div>
-					</form>
 
 				</div>
 			</div>
@@ -559,26 +582,22 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
                 <div class="col-xs-12 col-sm-6 col-md-6">
 
 					<ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-google-plus"></i></a></li>
-						<li><a data-wow-delay=".4s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-pinterest"></i></a></li>
-						<li><a data-wow-delay=".5s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><i class="fa fa-envelope"></i></a></li>
+						<li><a class="wow fadeInUp animated" href="https://www.facebook.com/Cty-TNHH-T%C3%B4n-Th%E1%BA%BF-D%C3%A2n-883758681729013/" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
+						<!-- <li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"><i class="fa fa-twitter"></i></a></li> -->
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-google-plus"></i></a></li>
+						<li><a data-wow-delay=".4s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-pinterest"></i></a></li>
+						<li><a data-wow-delay=".5s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><i class="fa fa-envelope"></i></a></li>
 					</ul>
-
-                    <p class="copyright">
-                        &copy; 2016 Be. Created By <a href="http://templatestock.co">Template Stock</a>
-					</p>
 
 				</div>
 				<div data-wow-delay=".6s" class="col-xs-12 col-sm-6 col-md-6 wow bounceIn  animated" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceIn;">
 
 					  <section class="widget widget_text" id="text-15">
-                         <h3 class="widget-title">California, United States</h3> <div class="textwidget">786, Firs Avenue, The Mall,<br>
-                        <p>Tel: 01 234-56786<br>
-                        Mobile: 01 234-56786<br>
-                        E-mail: <a href="#">info@Be.com</a></p>
-                        <a href="#">Get directions on the map</a> →</div>
+                         <h3 class="widget-title">Thành phố Pleiku, Gia Lai</h3> <div class="textwidget">601 Trường Chinh, Chi Lăng<br>
+                        <p>Tel: 0269 3 777879<br>
+                       	    Mobile: 01 234-56786<br>
+                        E-mail: <a href="#">tonthedan@yahoo.com</a></p>
+                        <a href="https://www.google.com/maps/place/Nh%C3%A0+M%C3%A1y+T%C3%B4n+Th%E1%BA%BF+D%C3%A2n/@13.9424242,108.0085642,17z/data=!3m1!4b1!4m5!3m4!1s0x316c2048c4334439:0xfff7d52933538cd9!8m2!3d13.9424252!4d108.0107236" style="font-size:20px" target="_blank">Click để đến địa chỉ</a> →</div>
                     </section>
 
 				</div>
@@ -640,6 +659,41 @@ window.onload = function() {
         }
     });
 };
+</script>
+<script>
+	function saveLienHe(){
+		var strurl = "<?php echo base_url(); ?>" + 'lienhe/insertCmt';
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var phone = $("#sdt").val();
+		var description = $("#description").val();
+		var validate = false;
+		if (name === "" ) {
+			$("#name").focus();
+		} else if (phone == "") {
+			$("#sdt").focus();
+		}else if (description == "") {
+			$("#description").focus();
+		}else{
+			validate = true;
+		}
+		if (validate) {
+			jQuery.ajax({
+				url: strurl,
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					name:name,
+					phone:phone,
+					email:email,
+					description:description
+				},
+				success: function(data) {
+					window.location.reload(true);
+				}
+			});
+		}
+	}
 </script>
 </body>
 </html>

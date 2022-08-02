@@ -13,7 +13,7 @@
     <body>
         <div class="container khung">
             <div class="title">
-                <h2 class="text-center" style="color:#337ab7">Nhân Mobile</h2>
+                <h2 class="text-center" style="color:#337ab7">QUẢN TRỊ</h2>
             </div>
             <hr>
             <div class="myform">
@@ -51,7 +51,7 @@
         </div>
         <nav class="navbar navbar-fixed-bottom" role="navigation">
             <div class="container">
-               <h5 class="text-center">Copyright © 2017 <a href="#" style="color:red">Smart-Store</a>. All rights reserved.</h5>
+               <h5 class="text-center">Copyright © 20xx <a href="#" style="color:red"></a>. All rights reserved.</h5>
             </div>
         </nav>
         <!-- jQuery -->

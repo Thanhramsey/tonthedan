@@ -32,7 +32,7 @@ $route['account/orders/(:num)'] = 'thongtin/order';
 $route['account/orders/update/(:num)'] = 'thongtin/update/(:num)';
 $route['reset_password'] = 'thongtin/reset_password';
 
-$route['admin'] = 'admin/dashboard';
+$route['admin'] = 'admin/contact';
 
 $route['admin/coupon'] ='admin/coupon';
 $route['admin/coupon/(:num)'] ='admin/coupon/index/$1';

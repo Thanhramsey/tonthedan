@@ -40,6 +40,25 @@ class Lienhe extends CI_Controller {
 		$this->load->view('frontend/layout',$this->data);
 	}
 
+	public function insertCmt(){
+		$d=getdate();
+		$today=$d['year']."/".$d['mon']."/".$d['mday']." ".$d['hours'].":".$d['minutes'].":".$d['seconds'];
+		$name=$_POST['name'];
+		$email=$_POST['email'];
+		$phone=$_POST['phone'];
+		$content=$_POST['description'];
+		$mydata= array(
+			'fullname'=>$name,
+			'email'=>$email,
+			'phone'=>$phone,
+			'title'=>$name,
+			'content'=> $content,
+			'created_at'=> $today
+				);
+		$this->Mcontact->contact_insert($mydata);
+		echo json_encode( $mydata );
+	}
+
 
 }
 

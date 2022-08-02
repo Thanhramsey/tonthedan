@@ -38,12 +38,12 @@ class Content extends CI_Controller {
 		$this->load->library('session');
 		$this->load->library('alias');
 		$this->form_validation->set_rules('name', 'Tên bài viết', 'required|is_unique[db_content.title]');
-		if ($this->form_validation->run() == TRUE) 
+		if ($this->form_validation->run() == TRUE)
 		{
 			$mydata= array(
-				'title' =>$_POST['name'], 
+				'title' =>$_POST['name'],
 				'alias' =>$string=$this->alias->str_alias($_POST['name']),
-				'fulltext'=>$_POST['fulltext'], 
+				'fulltext'=>$_POST['fulltext'],
 				'introtext'=>'',
 				'created'=>$today,
 				'created_by'=>$this->session->userdata('id'),
@@ -53,7 +53,7 @@ class Content extends CI_Controller {
 				'status'=>$_POST['status']
 			);
 			$config['upload_path']= './public/images/posts/';
-            $config['allowed_types']= 'gif|jpg|png';
+            $config['allowed_types']= 'gif|jpg|png|jpeg';
             $config['max_size']= 2000;
             $this->load->library('upload', $config);
             if ( $this->upload->do_upload('img'))
@@ -69,8 +69,8 @@ class Content extends CI_Controller {
 			$this->Mcontent->content_insert($mydata);
 			$this->session->set_flashdata('success', 'Thêm bài viết thành công');
 			redirect('admin/content','refresh');
-		} 
-		else 
+		}
+		else
 		{
 			$this->data['view']='insert';
 			$this->data['title']='Thêm bài viết mới';
@@ -87,12 +87,12 @@ class Content extends CI_Controller {
 		$this->load->library('session');
 		$this->load->library('alias');
 		$this->form_validation->set_rules('name', 'Tên bài viết', 'required');
-		if ($this->form_validation->run() == TRUE) 
+		if ($this->form_validation->run() == TRUE)
 		{
 			$mydata= array(
-				'title' =>$_POST['name'], 
+				'title' =>$_POST['name'],
 				'alias' =>$string=$this->alias->str_alias($_POST['name']),
-				'fulltext'=>$_POST['fulltext'], 
+				'fulltext'=>$_POST['fulltext'],
 				'introtext'=>$_POST['introtext'],
 				'modified'=>$today,
 				'modified_by'=>$this->session->userdata('id'),
@@ -115,7 +115,7 @@ class Content extends CI_Controller {
 			$this->Mcontent->content_update($mydata, $id);
 			$this->session->set_flashdata('success', 'Cập nhật bài viết thành công');
 			redirect('admin/content/','refresh');
-		} 
+		}
 		$this->data['view']='update';
 		$this->data['title']='Cập nhật bài viết';
 		$this->load->view('backend/layout', $this->data);
