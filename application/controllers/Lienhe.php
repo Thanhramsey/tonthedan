@@ -9,6 +9,7 @@ class Lienhe extends CI_Controller {
 		$this->data['com']='Lienhe';
 		$this->load->model('frontend/Mcategory');
 		$this->load->model('frontend/Mproduct');
+		$this->load->model('frontend/Mconfig');
 		$this->load->model('frontend/Mcontact');
 
 	}
@@ -56,6 +57,32 @@ class Lienhe extends CI_Controller {
 			'created_at'=> $today
 				);
 		$this->Mcontact->contact_insert($mydata);
+
+		$config_data = $this->Mconfig->get_config();
+		// echo "<pre>---In ra---\n".print_r($config_data)."</pre>";
+		$this->load->library('email');
+		$this->load->library('parser');
+		$this->email->clear();
+		$config['protocol']    = 'smtp';
+		$config['smtp_host']    = 'ssl://smtp.gmail.com';
+		$config['smtp_port']    = '465';
+		$config['smtp_timeout'] = '7';
+		$config['smtp_user']    = $config_data['mail_smtp'];
+		$config['smtp_pass']    = $config_data['mail_smtp_password'];
+		$config['charset']    = 'utf-8';
+		$config['newline']    = "\r\n";
+		$config['wordwrap'] = TRUE;
+		$config['mailtype'] = 'html';
+		$config['validation'] = TRUE;
+		$this->email->initialize($config);
+
+		$email = $config_data['mail_noreply'];
+
+		$this->email->from($config_data['mail_smtp'], 'Tôn Thế Dân');
+		$this->email->to($email);
+		$this->email->subject('Tôn Thế Dân thông báo !!');
+		$this->email->message('Bạn có 1 thông báo phản hồi khách hàng có tên : '.$name.', số điện thoại: '.$phone.' qua trang web !!!!');
+		$this->email->send();
 		echo json_encode( $mydata );
 	}
 

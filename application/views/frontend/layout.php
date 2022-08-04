@@ -547,6 +547,7 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 				<div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated" data-wow-delay=".1s">
 
 						<div class="ajax-hidden">
+						<h6 class="text-success">Thông tin của bạn đã được lưu lại , chúng tôi sẽ liên lạc lại với bạn sớm nhất.</h6>
 							<div class="col-xs-12 col-sm-4 col-md-4 form-group wow fadeInUp animated">
 								<label for="c_name" class="sr-only">Name</label>
 								<input type="text" placeholder="Name" name="name" class="form-control" id="name" required="">
@@ -689,7 +690,7 @@ window.onload = function() {
 					description:description
 				},
 				success: function(data) {
-					window.location.reload(true);
+					$(".text-success").show();
 				}
 			});
 		}
