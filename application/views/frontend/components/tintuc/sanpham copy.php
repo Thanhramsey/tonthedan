@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+	Be by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html lang="en">
 
 <head>
@@ -8,22 +13,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Tôn Thế Dân</title>
-	<link rel="icon" type="image/x-icon" href="<?php echo base_url() ?>public/assets/img/favicon.png">
+	<link rel="icon" type="image/x-icon" href="public/assets/img/favicon.png">
 
     <!-- =============== Bootstrap Core CSS =============== -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>public/assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css" type="text/css">
     <!-- =============== fonts awesome =============== -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>public/assets/font/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="public/assets/font/css/font-awesome.min.css" type="text/css">
     <!-- =============== Plugin CSS =============== -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>public/assets/css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="public/assets/css/animate.min.css" type="text/css">
     <!-- =============== Custom CSS =============== -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>public/assets/css/style.css" type="text/css">
-    <!-- =============== Owl Carousel <?php echo base_url() ?>public/assets =============== -->
-    <link href="<?php echo base_url() ?>public/assets/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="<?php echo base_url() ?>public/assets/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css">
+    <!-- =============== Owl Carousel public/assets =============== -->
+    <link href="public/assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="public/assets/owl-carousel/owl.theme.css" rel="stylesheet">
 
-	 <link rel="stylesheet" href="<?php echo base_url() ?>public/assets/css/isotope-docs.css" media="screen">
-	  <link rel="stylesheet" href="<?php echo base_url() ?>public/assets/css/baguetteBox.css">
+	 <link rel="stylesheet" href="public/assets/css/isotope-docs.css" media="screen">
+	  <link rel="stylesheet" href="public/assets/css/baguetteBox.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,7 +42,7 @@
     <!-- =============== Preloader =============== -->
     <div id="preloader">
         <div id="loading">
-		<img width="256" height="32" src="<?php echo base_url() ?>public/assets/img/loading-cylon-red.svg">
+		<img width="256" height="32" src="public/assets/img/loading-cylon-red.svg">
         </div>
     </div>
     <!-- =============== nav =============== -->
@@ -52,27 +57,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="<?php echo base_url() ?>public/assets/img/logo.png" alt="Logo">
+                    <a class="navbar-brand" href="#"><img src="public/assets/img/logo.png" alt="Logo">
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
 
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
 						<li>
-                            <a class="page-scroll" href="<?php echo base_url() ?>trang-chu">Trang chủ</a>
+                            <a class="page-scroll" href="trang-chu">Trang chủ</a>
                         </li>
-                        <li>
-                            <a class="page-scroll" href="<?php echo base_url() ?>sanpham">Sản phẩm</a>
+						 <li>
+                            <a href="tin-tuc">Tin tức</a>
                         </li>
-						<li>
-						 <a class="page-scroll" href="<?php echo base_url() ?>tin-tuc">Tin tức</a>
-                        </li>
-						<li>
-                            <a class="page-scroll" href="#contact">Liên hệ</a>
-                        </li>
-
                     </ul>
                 </div>
                 <!-- =============== navbar-collapse =============== -->
@@ -82,34 +80,46 @@
         <!-- =============== container-fluid =============== -->
     </nav>
 	<section id="content">
-			<div class="container" style="margin-top:120px;margin-bottom:30px">
-				<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 product-content" id="list-content">
-					<div class="product-wrap" id="info-content">
-						<div class="content-ct">
-							<div class="fs-ne2-it clearfix" style="padding-top: 5px">
-								<div class="fs-ne2-it clearfix">
-									<div class="entry-title">
-										<h2 ><?php echo $row['title']; ?></h2>
-									</div>
-									<ul class="entry-meta clearfix">
-										<li><i class="fa fa-calendar" style="margin-right: 5px"></i><?php echo $row['created']; ?></li>
-									</ul>
-								</div>
-								<div class="introtext">
-									<p><?php echo $row['introtext']; ?></p>
-								</div>
-								<div class="entry-content" style="border:1px solid #ddd;padding:20px">
-									<p><?php echo $row['fulltext']; ?></p>
-								</div>
-								<div class="fs-ne2-it clearfix" style="margin-top:15px">
-									<a href="<?php echo base_url() ?>tin-tuc" class="btn button btn-detail">Trờ về</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
+            <div class="container" style="margin-top:120px">
+            <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 product-content" id="list-content">
+                <div class="product-wrap">
+					<h2 style="border-bottom:2px solid black">
+						Tin tức
+					</h2>
+                  <div class="fs-newsboxs">
+                    <?php foreach ($list as $item) :?>
+                        <div class="fs-ne2-it clearfix" style="border-bottom:1px solid black; margin-bottom: 10px">
+                            <div class="fs-ne2-if">
+                                <a class="fs-ne2-img" href="tin-tuc/<?php echo $item['alias']; ?>">
+                                    <img style="width: 300px; height: 160px;"src="public/images/posts/<?php echo $item['img']; ?>">
+                                </a>
+                                <div class="fs-n2-info">
+                                    <h3 style="margin:10px 0px  !important"><a class="fs-ne2-tit" href="tin-tuc/<?php echo $item['alias']; ?>" title=""><?php echo $item['title']; ?></a></h3>
+                                    <div class="fs-ne2-txt"><?php echo $item['introtext']; ?></div>
+                                    <p class="fs-ne2-bot">
+                                        <span class="fs-ne2-user">
+                                            <img class="lazy"src="" style="">
+                                        </span>
+                                        <span>Đăng lúc: <?php echo $item['created']; ?></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    <?php endforeach; ?>
+
+                </div>
+                <div class = "row text-center">
+                   <ul class ="pagination">
+                      <?php echo $strphantrang; ?>
+                  </ul>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+</section>
     <!-- Footer -->
     <footer id="footer">
 	<!-- =============== container =============== -->
@@ -141,24 +151,24 @@
     </div><!-- =============== container end =============== -->
 	</footer>
 	<!-- =============== jQuery =============== -->
-    <script src="<?php echo base_url() ?>public/assets/js/jquery.js"></script>
-	 <script src="<?php echo base_url() ?>public/assets/js/isotope-docs.min.js"></script>
+    <script src="public/assets/js/jquery.js"></script>
+	 <script src="public/assets/js/isotope-docs.min.js"></script>
     <!-- =============== Bootstrap Core JavaScript =============== -->
-    <script src="<?php echo base_url() ?>public/assets/js/bootstrap.min.js"></script>
+    <script src="public/assets/js/bootstrap.min.js"></script>
     <!-- =============== Plugin JavaScript =============== -->
-    <script src="<?php echo base_url() ?>public/assets/js/jquery.easing.min.js"></script>
-    <script src="<?php echo base_url() ?>public/assets/js/jquery.fittext.js"></script>
-    <script src="<?php echo base_url() ?>public/assets/js/wow.min.js"></script>
+    <script src="public/assets/js/jquery.easing.min.js"></script>
+    <script src="public/assets/js/jquery.fittext.js"></script>
+    <script src="public/assets/js/wow.min.js"></script>
 	<!-- =============== owl carousel =============== -->
-    <script src="<?php echo base_url() ?>public/assets/owl-carousel/owl.carousel.js"></script>
+    <script src="public/assets/owl-carousel/owl.carousel.js"></script>
 	<!-- Isotope does NOT require jQuery. But it does make things easier -->
 
-<script src="<?php echo base_url() ?>public/assets/js/baguetteBox.js" async></script>
-<script src="<?php echo base_url() ?>public/assets/js/plugins.js" async></script>
+<script src="public/assets/js/baguetteBox.js" async></script>
+<script src="public/assets/js/plugins.js" async></script>
 
     <!-- =============== Custom Theme JavaScript =============== -->
-    <script src="<?php echo base_url() ?>public/assets/js/creative.js">	</script>
-<script src="<?php echo base_url() ?>public/assets/js/jquery.nicescroll.min.js"></script>
+    <script src="public/assets/js/creative.js">	</script>
+<script src="public/assets/js/jquery.nicescroll.min.js"></script>
 
 <script>
   $(document).ready(function() {
@@ -199,3 +209,5 @@ window.onload = function() {
 
 </body>
 </html>
+
+

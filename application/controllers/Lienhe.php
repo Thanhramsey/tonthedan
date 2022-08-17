@@ -58,6 +58,7 @@ class Lienhe extends CI_Controller {
 				);
 		$this->Mcontact->contact_insert($mydata);
 
+
 		$config_data = $this->Mconfig->get_config();
 		// echo "<pre>---In ra---\n".print_r($config_data)."</pre>";
 		$this->load->library('email');
@@ -78,10 +79,10 @@ class Lienhe extends CI_Controller {
 
 		$email = $config_data['mail_noreply'];
 
-		$this->email->from($config_data['mail_smtp'], 'Tôn Thế Dân');
+		$this->email->from($config_data['mail_smtp'], 'Sâm Ngọc Linh');
 		$this->email->to($email);
-		$this->email->subject('Tôn Thế Dân thông báo !!');
-		$this->email->message('Bạn có 1 thông báo phản hồi khách hàng có tên : '.$name.', số điện thoại: '.$phone.' qua trang web !!!!');
+		$this->email->subject('Sâm Ngọc Linh thông báo !!');
+		$this->email->message('Bạn có 1 thông báo phản hồi khách hàng có Tên : <stronng>'.$name.'</strong>. Số điện thoại: '.$phone.' qua trang web. Nội dung '.$content.'. Mau liên lạc lại bạn nhé !!!!  ');
 		$this->email->send();
 		echo json_encode( $mydata );
 	}

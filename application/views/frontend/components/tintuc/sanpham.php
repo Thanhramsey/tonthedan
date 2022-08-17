@@ -83,28 +83,39 @@
 	<div class="container">
             <div class="row">
 	<div class="title">
-				<h2 class="title-sp">Tin tức</h2>
+				<h2 class="title-sp">Sản phẩm</h2>
 				</div>
 			</div></div>
 
 	<div class="big-demo go-wide" data-js-module="filtering-demo">
+	<div class="container">
+            <div class="row">
+	<div class="filter-button-group button-group js-radio-button-group" style="margin-bottom:20px !important">
+		<button class="button is-checked" data-filter="*">Tất cả</button>
+		<button class="button" data-filter=".web-0">Tôn</button>
+		<button class="button" data-filter=".web-1">Ngói</button>
+		<button class="button" data-filter=".web-2">Sắp thép, xà gồ</button>
+		<!-- <button class="button" data-filter=".logo">Logo</button> -->
+	</div>
+	</div>
+	</div>
 	<div class = "text-center container">
             <ul class ="pagination">
               <?php echo $strphantrang; ?>
             </ul>
         </div>
-	<div class="container" style="margin-bottom:15px">
+	<div class="grid baguetteBoxThree gallery">
                 <!-- gallery item -->
 				<?php foreach ($list as $sp) :?>
-					<div class="col-md-4 transition" data-category="post-transition" style="margin-bottom:10px;height:300px">
-						<a href="<?php echo base_url() ?>tin-tuc/<?php echo $sp['alias']; ?>">
-						<img style="height:90%;width:100%;border-radius:20px" src="<?php echo base_url() ?>public/images/posts/<?php echo $sp['img']; ?>"/>
+					<div class="element-item transition web-<?php echo $sp['type']; ?> col-md-3 " data-category="post-transition" style="margin-bottom:10px">
+						<a href="<?php echo base_url() ?>ttsanpham/<?php echo $sp['id']; ?>">
+						<img src="<?php echo base_url() ?>/public/assets/images/<?php echo $sp['img']; ?>"/>
+							<div class="hover-img">
+							<h2><?php echo $sp['name']; ?></h2>
+							<i class="fa fa-camera camera"></i>
+							</div>
 						</a>
-						<div>
-						<h3 style="margin:10px 0px  !important"><a class="fs-ne2-tit" href="tin-tuc/<?php echo $sp['alias']; ?>" title=""><?php echo $sp['title']; ?></a></h3>
-						</div>
 					</div>
-
 				<?php endforeach; ?>
             </div>
 	</div>

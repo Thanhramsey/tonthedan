@@ -79,38 +79,68 @@
         </div>
         <!-- =============== container-fluid =============== -->
     </nav>
-	<section id="Gallery" class="wow flipInX animated" data-wow-delay=".5s">
-	<div class="container">
-            <div class="row">
-	<div class="title">
-				<h2 class="title-sp">Tin tức</h2>
-				</div>
-			</div></div>
+	<section id="content"  style="margin-bottom:50px;margin-top:150px">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 product-content" id="list-content">
+				<div class="product-wrap" id="info-content">
+					<div class="content-ct">
+						<div class="fs-ne2-it clearfix" style="padding-top: 5px">
+							<div class="fs-ne2-it clearfix">
+								<div class="entry-title text-center">
+									<h2 class="title-sp"><strong>Thông tin sản phẩm</strong></h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4  wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" >
+									<div class="item-img">
+										<a href="../public/assets/images/<?php echo $row['img']; ?>" data-fancybox="images">
+											<img src="../public/assets/images/<?php echo $row['img']; ?>" alt="image" style="height:100%;border-radius:20px;width:100%">
+										</a>
+									</div>
+								</div>
 
-	<div class="big-demo go-wide" data-js-module="filtering-demo">
-	<div class = "text-center container">
-            <ul class ="pagination">
-              <?php echo $strphantrang; ?>
-            </ul>
-        </div>
-	<div class="container" style="margin-bottom:15px">
-                <!-- gallery item -->
-				<?php foreach ($list as $sp) :?>
-					<div class="col-md-4 transition" data-category="post-transition" style="margin-bottom:10px;height:300px">
-						<a href="<?php echo base_url() ?>tin-tuc/<?php echo $sp['alias']; ?>">
-						<img style="height:90%;width:100%;border-radius:20px" src="<?php echo base_url() ?>public/images/posts/<?php echo $sp['img']; ?>"/>
-						</a>
-						<div>
-						<h3 style="margin:10px 0px  !important"><a class="fs-ne2-tit" href="tin-tuc/<?php echo $sp['alias']; ?>" title=""><?php echo $sp['title']; ?></a></h3>
+								<div class="col-md-8  wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+									<div class="product-view-content">
+									<div class="product-view-name">
+										<h1><?php echo $row['name'] ?></h1>
+									</div>
+									<div class="product-view-price">
+											<p><b>Giá bán: </b>
+												<?php if($row['price']==0): ?>
+													<span style="color:red;font-size:20px"><strong>Liên hệ!</strong></span>
+												<?php else : ?>
+													<span style="color:red;font-size:20px"><strong><?php echo(number_format($row['price'])); ?> vn₫</strong></span>
+												<?php endif; ?>
+											</p>
+									</div>
+									<div style="margin-top: 10px;">
+										<p>
+										<b>Tình trạng</b>
+										<span>Nguyên hộp. Đầy đủ từ nhà sản xuất, gồm: Sản phẩm, hướng dẫn sử dụng,...</span>
+										</p>
+									</div>
+									<div style="margin-top: 10px;">
+										<b>Đặt hàng gọi ngay: </b> <span style="color:red"><strong>032 742 7268</strong></span>
+									</div>
+									<div style="margin-top: 10px;" class="product-view-name">
+										<b>Thông tin sản phẩm:</b>
+										<br>
+										<p><?php echo $row['detail'] ?></p>
+									</div>
+
+								</div>
+								</div>
+							</div>
 						</div>
 					</div>
-
-				<?php endforeach; ?>
-            </div>
-	</div>
-
-
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top:15px">
+				<a href="<?php echo base_url() ?>sanpham" class="btn button btn-detail">Trờ về</a>
+			</div>
+		</div>
 	</section>
+
 	<section id="contact">
 	<!-- =============== container =============== -->
 		<div class="container">

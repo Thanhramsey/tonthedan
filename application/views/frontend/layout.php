@@ -71,17 +71,18 @@
                         <li>
                             <a class="page-scroll" href="#Services">Dịch vụ</a>
                         </li>
+						<li>
+                            <a class="page-scroll" href="#about">Thông tin</a>
+                        </li>
                         <li>
                             <a class="page-scroll" href="#Gallery">Sản phẩm</a>
                         </li>
 						<li>
-                            <a class="page-scroll" href="#about">Thông tin</a>
-                        </li>
+						 <a class="page-scroll" href="#tintuc">Tin tức</a>
+						</li>
+
 						<li>
                             <a class="page-scroll" href="#contact">Liên hệ</a>
-                        </li>
-						 <li>
-                            <a href="tin-tuc">Tin tức</a>
                         </li>
                     </ul>
                 </div>
@@ -141,6 +142,8 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
         </div>
 		<!-- =============== container end =============== -->
     </section>
+		<!-- =============== About =============== -->
+
 	<!-- =============== for box =============== -->
 	<section class="for-box">
 	 <div class="container">
@@ -212,6 +215,23 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 		</div>
 	 </div>
 	</section>
+	<section id="about" class="">
+		<!-- =============== container =============== -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInDown animated" data-wow-delay=".5s">
+                   <h2>Về chúng tôi</h2>
+				   <p>Công ty Tôn Thế Dân là đơn vị chuyên sản xuất thép cán nguội, tôn kẽm, tôn lạnh, tôn màu, thép hộp mạ kẽm phục vụ cho ngành xây dựng công nghiệp và dân dụng, hạ tầng giao thông, thiết bị gia dụng. Công ty thành lập ngày 04/09/2009</p>
+				   <p>Với phương châm “Chất lượng - Uy tín - Phát triển vững bền”, công ty Cổ phần Tôn Thế Dân có những chính sách thường xuyên nghiên cứu thị trường trong và ngoài tỉnh, đẩy mạnh tái đầu tư dây chuyền công nghệ nhằm nâng cao chất lượng sản phẩm, tăng tính đa dạng, phong phú của sản phẩm qua đó khẳng định vị thế của thương hiệu Tôn Thế Dân trên thị trường, mở rộng thị trường xuất khẩu trong khu vực và hướng tới các thị trường xa hơn.</p>
+				   <p>Tôn Thế Dân luôn thực thi cam kết với các đối tác, khách hàng và người tiêu dùng về mục tiêu nâng cao chất lượng sản phẩm, chất lượng dịch vụ với giá thành cạnh tranh nhằm đáp ứng tối đa nhu cầu của thị trường và tạo nên uy tín cho thương hiệu.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
+                     <img src="public/assets/img/about-img.jpg"/>
+                  </div>
+            </div>
+        </div>
+		<!-- =============== container end =============== -->
+    </section>
 	<!-- =============== Counter =============== -->
     <section class="counter">
 		<!-- =============== container =============== -->
@@ -247,287 +267,64 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 
 <!-- =============== Gallery =============== -->
     <section id="Gallery" class="wow flipInX animated" data-wow-delay=".5s">
+	<div class="container">
+            <div class="row">
 	<div class="title">
-				<h2>Thư viện</h2>
-				<p>Sản phẩm cung cấp</p>
+				<h2 class="title-sp">Sản phẩm</h2>
+				<a data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="button"  href="<?php echo base_url() ?>sanpham">Xem thêm</a>
 				</div>
+			</div></div>
 
 	<div class="big-demo go-wide" data-js-module="filtering-demo">
 	<div class="container">
             <div class="row">
-  <div class="filter-button-group button-group js-radio-button-group">
-    <button class="button is-checked" data-filter="*">Tất cả</button>
-    <button class="button" data-filter=".ton">Tôn</button>
-    <button class="button" data-filter=".ngoi">Ngói</button>
-	 <button class="button" data-filter=".sat">Sắp thép, xà gồ</button>
-	<!-- <button class="button" data-filter=".logo">Logo</button> -->
-  </div>
-</div>
-</div>
-
-
-  <div class="grid baguetteBoxThree gallery">
-      <div class="element-item transition ton " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ton/1.jpg">
-	  <img src="public/assets/img/gallery/ton/1.jpg"/>
-		<div class="hover-img">
-		<h2>Sóng ngói tây</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-	  </a>
-      </div>
-      <div class="element-item post-transition ton " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ton/2.jpeg">
-	  <img src="public/assets/img/gallery/ton/2.jpeg"/>
-		<div class="hover-img">
-		<h2>Tôn lạnh xanh</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-	  </a>
-      </div>
-      <div class="element-item post-transition ton " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ton/3.jpeg">
-	  <img src="public/assets/img/gallery/ton/3.jpeg"/>
-		<div class="hover-img">
-		<h2>Tôn lạnh xanh lục</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-	 <div class="element-item transition ton " data-category="post-transition">
-	 <a href="public/assets/img/gallery/ton/4.jpeg">
-	  <img src="public/assets/img/gallery/ton/4.jpeg"/>
-		<div class="hover-img">
-		<h2>Tôn lạnh đỏ</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-      <div class="element-item post-transition ton " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ton/5.jpeg">
-	  <img src="public/assets/img/gallery/ton/5.jpeg"/>
-		<div class="hover-img">
-		<h2>Tôn giả ngói</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-      <div class="element-item post-transition ngoi " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ngoi/1.jpg">
-	  <img src="public/assets/img/gallery/ngoi/1.jpg"/>
-		<div class="hover-img">
-		<h2>Ngói sóng đỏ</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-	  <div class="element-item post-transition ngoi " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ngoi/2.jpg">
-	  <img src="public/assets/img/gallery/ngoi/2.jpg"/>
-		<div class="hover-img">
-		<h2>Ngói màu xanh lá</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-	  <div class="element-item post-transition ngoi " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ngoi/3.jpg">
-	  <img src="public/assets/img/gallery/ngoi/3.jpg"/>
-		<div class="hover-img">
-		<h2>Ngói màu nâu</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-      <div class="element-item post-transition ngoi " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ngoi/4.jpg">
-	  <img src="public/assets/img/gallery/ngoi/4.jpg"/>
-		<div class="hover-img">
-		<h2>Ngói lớp đỏ</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-	  <div class="element-item post-transition ngoi " data-category="post-transition">
-	  <a href="public/assets/img/gallery/ngoi/5.jpg">
-	  <img src="public/assets/img/gallery/ngoi/5.jpg"/>
-		<div class="hover-img">
-		<h2>Ngói lợp xi măng xanh</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-	  <div class="element-item post-transition sat " data-category="post-transition">
-         <a href="public/assets/img/gallery/sat/1.jpg">
-	    <img src="public/assets/img/gallery/sat/1.jpg"/>
-		<div class="hover-img">
-		<h2>Sắt, thép, xà gồ</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-	  <div class="element-item post-transition sat " data-category="post-transition">
-         <a href="public/assets/img/gallery/sat/2.jpg">
-	    <img src="public/assets/img/gallery/sat/2.jpg"/>
-		<div class="hover-img">
-		<h2>Sắt, thép, xà gồ</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-	  <div class="element-item post-transition sat " data-category="post-transition">
-         <a href="public/assets/img/gallery/sat/3.jpg">
-	    <img src="public/assets/img/gallery/sat/3.jpg"/>
-		<div class="hover-img">
-		<h2>Sắt, thép, xà gồ</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-	  <div class="element-item post-transition sat " data-category="post-transition">
-         <a href="public/assets/img/gallery/sat/4.jpg">
-	    <img src="public/assets/img/gallery/sat/4.jpg"/>
-		<div class="hover-img">
-		<h2>Sắt, thép, xà gồ</h2>
-		<i class="fa fa-camera camera"></i>
-		</div>
-		</a>
-      </div>
-  </div>
-
-
+	<div class="filter-button-group button-group js-radio-button-group">
+		<button class="button is-checked" data-filter="*">Tất cả</button>
+		<button class="button" data-filter=".ton">Tôn</button>
+		<button class="button" data-filter=".ngoi">Ngói</button>
+		<button class="button" data-filter=".sat">Sắp thép, xà gồ</button>
+		<!-- <button class="button" data-filter=".logo">Logo</button> -->
+	</div>
+	</div>
+	</div>
+	<div class="grid baguetteBoxThree gallery">
+                <!-- gallery item -->
+				<?php foreach ($listmenu as $sp) :?>
+					<div class="element-item transition ton col-md-3 " data-category="post-transition" style="margin-bottom:10px">
+						<a href="<?php echo base_url() ?>/public/assets/images/<?php echo $sp['img']; ?>">
+						<img src="<?php echo base_url() ?>/public/assets/images/<?php echo $sp['img']; ?>"/>
+							<div class="hover-img">
+							<h2><?php echo $sp['name']; ?></h2>
+							<i class="fa fa-camera camera"></i>
+							</div>
+						</a>
+					</div>
+				<?php endforeach; ?>
+            </div>
 </div>
 
 
 </section>
-	<!-- <section id="blog" class="">
-		=============== container ===============
-        <div class="container">
-            <div class="row">
-				<div class="title">
-				<h2>Our Blog</h2>
-				<p>Meet some of our lovely, passionate, positive people.</p>
-				</div>
-                 <div class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp animated" data-wow-delay=".1s">
-                      <div class="blog-img">
-						<img src="public/assets/img/blog1.JPG"/>
-					  </div>
-					  <div class="row">
-					  <div class="data">30</div>
-					  <div class="month">March</div>
-					  </div>
-					  <div class="row">
-					  <h3>Travelling with kids Quensland Capricorn Coast</h3>
-					  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam nullam rhoncus tortor at dignissim vehicula.</p>
-					  <a href="blog-single.html">MORE</a>
-					  </div>
-                  </div>
-				 <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".4s">
-                      <div class="blog-img">
-						<img src="public/assets/img/blog2.JPG"/>
-					  </div>
-					  <div class="row">
-					  <div class="data">30</div>
-					  <div class="month">March</div>
-					  </div>
-					  <div class="row">
-					  <h3>Travelling with kids Quensland Capricorn Coast</h3>
-					  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam nullam rhoncus tortor at dignissim vehicula.</p>
-					  <a href="blog-single.html">MORE</a>
-					  </div>
-                  </div>
-				 <div class="col-xs-12 col-sm-4 col-md-4 wow fadeInDown animated" data-wow-delay=".3s">
-                      <div class="blog-img">
-						<img src="public/assets/img/blog3.JPG"/>
-					  </div>
-					  <div class="row">
-					  <div class="data">30</div>
-					  <div class="month">March</div>
-					  </div>
-					  <div class="row">
-					  <h3>Travelling with kids Quensland Capricorn Coast</h3>
-					  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam nullam rhoncus tortor at dignissim vehicula.</p>
-					  <a href="blog-single.html">MORE</a>
-					  </div>
-                  </div>
-            </div>
-        </div>
-		=============== container end ===============
-    </section> -->
-	<!-- =============== About =============== -->
-    <section id="about" class="">
-		<!-- =============== container =============== -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInDown animated" data-wow-delay=".5s">
-                   <h2>Về chúng tôi</h2>
-				   <p>Công ty Tôn Thế Dân là đơn vị chuyên sản xuất thép cán nguội, tôn kẽm, tôn lạnh, tôn màu, thép hộp mạ kẽm phục vụ cho ngành xây dựng công nghiệp và dân dụng, hạ tầng giao thông, thiết bị gia dụng. Công ty thành lập ngày 04/09/2009</p>
-				   <p>Với phương châm “Chất lượng - Uy tín - Phát triển vững bền”, công ty Cổ phần Tôn Thế Dân có những chính sách thường xuyên nghiên cứu thị trường trong và ngoài tỉnh, đẩy mạnh tái đầu tư dây chuyền công nghệ nhằm nâng cao chất lượng sản phẩm, tăng tính đa dạng, phong phú của sản phẩm qua đó khẳng định vị thế của thương hiệu Tôn Thế Dân trên thị trường, mở rộng thị trường xuất khẩu trong khu vực và hướng tới các thị trường xa hơn.</p>
-				   <p>Tôn Thế Dân luôn thực thi cam kết với các đối tác, khách hàng và người tiêu dùng về mục tiêu nâng cao chất lượng sản phẩm, chất lượng dịch vụ với giá thành cạnh tranh nhằm đáp ứng tối đa nhu cầu của thị trường và tạo nên uy tín cho thương hiệu.</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
-                     <img src="public/assets/img/about-img.jpg"/>
-                  </div>
-            </div>
-        </div>
-		<!-- =============== container end =============== -->
-    </section>
-	<section id="team" class="">
+
+	<section id="tintuc" class="">
 		<!-- =============== container =============== -->
         <div class="container">
             <div class="row">
 				<div class="title">
-				<h2>Đội ngũ chúng tôi</h2>
+				<h2>Tin tức</h2>
+				<a data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="button"  href="<?php echo base_url() ?>tin-tuc">Xem thêm</a>
 				<!-- <p>Meet some of our lovely, passionate, positive people.</p> -->
 				</div>
-                <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown animated" data-wow-delay=".1s">
-                   <div class="timg"><img src="public/assets/img/team-img1.jpg"/></div>
-				    <div class="t-box">
-				   <h3>Nguyễn Thế Hoài</h3>
-				   <span>Giám đốc </span>
-				   <ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				   </div>
-                  </div>
-				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp animated" data-wow-delay=".2s">
-                    <div class="timg"><img src="public/assets/img/team-img2.jpg"/></div>
-				   <div class="t-box">
-				   <h3>Châu Thanh Chương</h3>
-				   <span>Kế Toán trưởng</span>
-				   <ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				   </div>
-                  </div>
-				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown animated" data-wow-delay=".3s">
-                    <div class="timg"><img src="public/assets/img/team-img3.jpg"/></div>
-				   <div class="t-box">
-				   <h3>Phan Văn Cường</h3>
-				   <span>Đội trưởng</span>
-				   <ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				   </div>
-                  </div>
-				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp animated" data-wow-delay=".4s">
-                    <div class="timg"><img src="public/assets/img/team-img4.jpg"/></div>
-				    <div class="t-box">
-				   <h3>Trần Sơn Tùng</h3>
-				   <span>Tổ trưởng</span>
-				   <ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				   </div>
-                  </div>
+
+				<?php foreach ($tintuc as $row) :?>
+					<div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp animated" data-wow-delay=".2s">
+						<div class="timg"><img src="<?php echo base_url() ?>/public/images/posts/<?php echo $row['img'] ?>"/></div>
+						<div class="t-box">
+							<a style="text-align:left;" href="<?php echo base_url() ?>tin-tuc/<?php echo $row['alias']; ?>"> <strong><h3><?php echo $row['title']; ?></h3></strong></a>
+							<p class="text-left deal-para"><?php echo $row['created'] ?></p>
+						</div>
+					</div>
+				<?php endforeach; ?>
             </div>
         </div>
 		<!-- =============== container end =============== -->
@@ -547,7 +344,7 @@ Công ty hướng đến các sản phẩm tôn chất lượng cao, do đó cá
 				<div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated" data-wow-delay=".1s">
 
 						<div class="ajax-hidden">
-						<h6 class="text-success">Thông tin của bạn đã được lưu lại , chúng tôi sẽ liên lạc lại với bạn sớm nhất.</h6>
+						<h6 class="text-success" style="display:none">Thông tin của bạn đã được lưu lại , chúng tôi sẽ liên lạc lại với bạn sớm nhất.</h6>
 							<div class="col-xs-12 col-sm-4 col-md-4 form-group wow fadeInUp animated">
 								<label for="c_name" class="sr-only">Name</label>
 								<input type="text" placeholder="Name" name="name" class="form-control" id="name" required="">

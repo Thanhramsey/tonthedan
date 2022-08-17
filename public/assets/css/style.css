@@ -200,13 +200,93 @@ transition: all 0.35s ease 0s;
 }
 /*----------- team ------------*/
 
-#team {
+#tintuc {
    /* background: url("../img/team-bg.jpg") no-repeat scroll center bottom / cover ; */
-   background: #e19100 scroll center bottom / cover;
-    color: #fff;
+   background: #fff scroll center bottom / cover;
+    color: #333;
     overflow: hidden;
 	padding:100px 0 220px;
     transition: all 0.35s ease 0s;
+}
+#Gallery h2.title-sp{
+	padding: 50px 0 25px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#Gallery h2.title-sp::before {
+    background: #000 none repeat scroll 0 0;
+    bottom: 9px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 100%;
+	left:0;
+}
+#Gallery h2.title-sp::after {
+    background: #ffa100 none repeat scroll 0 0;
+    bottom: 9px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    z-index: 999;
+}
+
+#content h2.title-sp{
+	padding: 50px 0 25px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#content h2.title-sp::before {
+    background: #000 none repeat scroll 0 0;
+    bottom: 9px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 100%;
+	left:0;
+}
+#content h2.title-sp::after {
+    background: #ffa100 none repeat scroll 0 0;
+    bottom: 9px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    z-index: 999;
+}
+
+
+#tintuc h2 {
+    padding: 50px 0 25px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#tintuc h2::before {
+    background: #000 none repeat scroll 0 0;
+    bottom: 9px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 100%;
+	left:0;
+}
+#tintuc h2::after {
+    background: #ffa100 none repeat scroll 0 0;
+    bottom: 9px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    z-index: 999;
 }
 .t-box {
     background: #fff none repeat scroll 0 0;
@@ -218,6 +298,8 @@ transition: all 0.35s ease 0s;
 }
 .timg > img {
     width: 100%;
+	height:100%;
+	border-radius: 20px;
 }
 .t-box .social-links {
 padding:0px;
@@ -236,10 +318,12 @@ margin:20px 0 0 0px;
 }
 .timg {
     position: relative;
-	  transition: all 0.35s ease 0s;
+	 transition: all 0.35s ease 0s;
+	 height:250px
 }
 .timg:hover::after {
     background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+	border-radius: 20px;
     content: "";
     height: 100%;
     left: 0;
@@ -571,15 +655,16 @@ font-weight: bold;
 }
 .hover-img {
     background: #000 none repeat scroll 0 0;
-    height: 96%;
-    left: 6px;
-    margin: 8px 5px;
+    height: 100%;
+    /* left: 6px;
+    margin: 8px 5px; */
     opacity: 0;
     position: absolute;
     text-align: center;
     top: 0px;
-    width: 96%;
+    width: 90%;
 	transition: all 0.32s ease 0s;
+	border-radius: 20px;
 }
 .hover-img:hover {
     background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
@@ -598,7 +683,7 @@ font-weight: bold;
     transition: all 0.3s ease 0s;
 }
 .element-item {
-width:25%;
+/* width:25%; */
 height:320px;
     /* background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important; */
 	background: #fff none repeat scroll 0 0 !important;
@@ -954,6 +1039,32 @@ blockquote {
     padding: 10px 0;
     transition: all 0.3s ease 0s;
     width: 165px;
+	border-radius: 10px;
+}
+
+#Gallery .btn-block ,#tintuc .btn-block {
+    background: #ffa100 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #000;
+    display: block;
+    font-size: 16px;
+   	margin: 0 auto;
+    padding: 10px 0;
+    transition: all 0.3s ease 0s;
+    width: 165px;
+	border-radius: 10px;
+}
+
+#content .btn-detail {
+    background: #ffa100 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #000;
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    transition: all 0.3s ease 0s;
+    width: 165px;
+	border-radius: 10px;
 }
 
 #footer {
