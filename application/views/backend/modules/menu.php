@@ -19,6 +19,11 @@
 				</a>
 			</li>
 			<li class="treeview">
+				<a href="<?php echo base_url() ?>admin/sliders">
+					<i class="glyphicon glyphicon-tree-deciduous"></i><span>Sản phẩm</span>
+				</a>
+			</li>
+			<li class="treeview">
 				<a href="admin/configuration/update">
 					<i class="glyphicon glyphicon-cog"></i><span> Cấu hình</span>
 				</a>

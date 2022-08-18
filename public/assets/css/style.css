@@ -205,7 +205,7 @@ transition: all 0.35s ease 0s;
    background: #fff scroll center bottom / cover;
     color: #333;
     overflow: hidden;
-	padding:100px 0 220px;
+	padding:30px 0 70px;
     transition: all 0.35s ease 0s;
 }
 #Gallery h2.title-sp{
@@ -260,6 +260,10 @@ transition: all 0.35s ease 0s;
     right: 0;
     width: 50%;
     z-index: 999;
+}
+
+.orange-text{
+ color :#ffa100 !important;
 }
 
 
@@ -1027,7 +1031,7 @@ blockquote {
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     width: 100%;
 }
-#contact .btn-block {
+/* #contact .btn-block {
     background: #ffa100 none repeat scroll 0 0;
     border-radius: 0;
     color: #000;
@@ -1040,9 +1044,9 @@ blockquote {
     transition: all 0.3s ease 0s;
     width: 165px;
 	border-radius: 10px;
-}
+} */
 
-#Gallery .btn-block ,#tintuc .btn-block {
+/* #tintuc .btn-block {
     background: #ffa100 none repeat scroll 0 0;
     border-radius: 5px;
     color: #000;
@@ -1053,9 +1057,28 @@ blockquote {
     transition: all 0.3s ease 0s;
     width: 165px;
 	border-radius: 10px;
+} */
+
+#Gallery .btn-block,#content .btn-detail,#tintuc .btn-block,#contact .btn-block  {
+	/* background: #ffa100; */
+	border-color: #333;
+	border-radius: 10px;
+	 color: #333;
+	 background-image: linear-gradient(45deg, #ffa100 50%, transparent 50%);
+	 background-position: 100%;
+	 background-size: 400%;
+	 transition: background 600ms ease-in-out;
+	 width: 165px;
+	 font-size: 16px;
+	 font-weight: bold;
+	 margin: 0 auto;
+  	padding: 10px 0;
+}
+#Gallery .btn-block:hover,#content .btn-detail:hover,#tintuc .btn-block:hover,#contact .btn-block:hover {
+	background-position: 0;
 }
 
-#content .btn-detail {
+/* #content .btn-detail {
     background: #ffa100 none repeat scroll 0 0;
     border-radius: 5px;
     color: #000;
@@ -1065,12 +1088,12 @@ blockquote {
     transition: all 0.3s ease 0s;
     width: 165px;
 	border-radius: 10px;
-}
+} */
 
 #footer {
-    background: rgba(0, 0, 0, 0) url("../img/footer-bg.jpg") no-repeat scroll -554px -686px;
-    color: #fff;
-    padding: 60px 0 120px;
+    background: #333;
+    color: #333;
+    padding: 60px 0 30px;
     position: relative;
     text-align: center;
     width: 100%;
@@ -1086,9 +1109,9 @@ blockquote {
     margin: 5px;
 }
 #footer .social-links a {
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 1px solid #333;
     border-radius: 50%;
-    color: rgba(255, 255, 255, 1);
+    color: #333;
     display: block;
     font-size: 25px;
     height: 50px;
@@ -1457,6 +1480,155 @@ width:100%;
 }
 
 }
+
+
+/*================================================
+Go Top CSS
+=================================================*/
+.go-top {
+    position: fixed;
+    cursor: pointer;
+    bottom: 15px;
+    right: 15px;
+    color: #ffffff;
+    background-color: #0195ff;
+    z-index: 4;
+    width: 60px;
+    text-align: center;
+    height: 62px;
+    line-height: 62px;
+    opacity: 0;
+    visibility: hidden;
+	border-radius:10px;
+    -webkit-transition: .9s;
+    transition: .9s;
+    -webkit-transform: translateY(150px);
+    transform: translateY(150px);
+}
+
+.go-top.active {
+    -webkit-animation: bounceInDown 2s;
+    animation: bounceInDown 2s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.go-top i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.go-top i:last-child {
+    opacity: 0;
+    visibility: hidden;
+    top: 60%;
+}
+
+.go-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	border-radius:10px;
+    background: #ff5606;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.go-top:hover, .go-top:focus {
+    color: #ffffff;
+}
+
+.go-top:hover::before, .go-top:focus::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.go-top:hover i:first-child, .go-top:focus i:first-child {
+    opacity: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.go-top:hover i:last-child, .go-top:focus i:last-child {
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+}
+
+
+.btn-call-now.active {
+    -webkit-animation: bounceInDown 2s;
+    animation: bounceInDown 2s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.btn-call-now {
+    display: flex;
+    height: 50px;
+	width: 180px;
+    align-items: center;
+    position: fixed;
+    line-height: 17px;
+    right: 15px;
+    background: #00a54f;
+    text-decoration: none;
+    z-index: 999999999;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 5px 19px 5px 5px;
+	visibility: hidden;
+}
+.btn-call-now:nth-child(odd){
+background: #ee242b;
+}
+.btn-call-01{
+bottom: 80px;
+}
+.btn-call-02{
+bottom: 140px;
+}
+.btn-call-now:hover {
+    background: #ea5d5d;
+    color: #fff;
+}
+.btn-call-now em {
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    background: #ffa100;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 5px;
+    animation-duration: 1s;
+    animation-name: calllink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 
 
 

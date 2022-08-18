@@ -16,7 +16,7 @@ class Tintuc extends CI_Controller {
         $aurl= explode('/',uri_string());
 		$catlink=$aurl[0];
 		$this->load->library('phantrang');
-		$limit=10;
+		$limit=6;
 		$current=$this->phantrang->PageCurrent();
 		$first=$this->phantrang->PageFirst($limit, $current);
 		$total=$this->Mcontent->content_count();

@@ -142,7 +142,7 @@
                          <h3 class="widget-title">Thành phố Pleiku, Gia Lai</h3> <div class="textwidget">601 Trường Chinh, Chi Lăng<br>
                         <p>Tel: 0269 3 777879<br>
                        	    Mobile: 01 234-56786<br>
-                        E-mail: <a href="#">tonthedan@yahoo.com</a></p>
+                        E-mail: <a href="#">thehoai@gmail.com</a></p>
                         <a href="https://www.google.com/maps/place/Nh%C3%A0+M%C3%A1y+T%C3%B4n+Th%E1%BA%BF+D%C3%A2n/@13.9424242,108.0085642,17z/data=!3m1!4b1!4m5!3m4!1s0x316c2048c4334439:0xfff7d52933538cd9!8m2!3d13.9424252!4d108.0107236" style="font-size:20px" target="_blank">Click để đến địa chỉ</a> →</div>
                     </section>
 

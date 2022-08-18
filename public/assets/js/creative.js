@@ -69,7 +69,30 @@ $(document).ready(function() {
             top: 100
         }
     })
-	
+
+
+	// Go to Top
+    $(function(){
+        // Scroll Event
+        $(window).on('scroll', function(){
+            var scrolled = $(window).scrollTop();
+            if (scrolled > 600){
+				$('.go-top').addClass('active');
+				$('.btn-call-now').addClass('active');
+			}
+			if (scrolled < 600){
+				$('.go-top').removeClass('active');
+				$('.btn-call-now').removeClass('active');
+			}
+
+        });
+        // Click Event
+        $('.go-top').on('click', function() {
+            $("html, body").animate({ scrollTop: "0" },  500);
+        });
+    });
+
+
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
@@ -80,17 +103,16 @@ $(document).ready(function() {
 ;
 (function ($) {
     include('../../js/jquery.rd-parallax.js');
-})(jQuery); 
+})(jQuery);
 
 /* filter
  =============================================*/
 /*--------------------------
 	scrollUp
----------------------------- */	
+---------------------------- */
 	$.scrollUp({
         scrollText: '<i class="fa fa-angle-up"></i>',
         easingType: 'linear',
         scrollSpeed: 900,
         animation: 'fade'
     });
-	   

@@ -9,9 +9,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tôn Thế Dân, chuyên cung cấp tôn , ngói, sắt thép cho công trình">
+    <meta name="author" content="Tôn Thế Dân">
+	<meta name="keywords" content="ton the dan, ton, ngoi, sat, thep, gia lai, pleiku ,tôn ,ngói, sắt , thép">
     <title>Tôn Thế Dân</title>
 	<link rel="icon" type="image/x-icon" href="<?php echo base_url() ?>/public/assets/img/favicon.png">
 
@@ -50,7 +51,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="<?php echo base_url() ?>/public/assets/img/logo.png" alt="Logo">
+                    <a class="navbar-brand" href="<?php echo base_url() ?>trang-chu"><img src="<?php echo base_url() ?>public/assets/img/logo.png" alt="Logo">
                     </a>
                 </div>
 
@@ -109,7 +110,7 @@
 				<?php foreach ($list as $sp) :?>
 					<div class="element-item transition web-<?php echo $sp['type']; ?> col-md-3 " data-category="post-transition" style="margin-bottom:10px">
 						<a href="<?php echo base_url() ?>ttsanpham/<?php echo $sp['id']; ?>">
-						<img src="<?php echo base_url() ?>/public/assets/images/<?php echo $sp['img']; ?>"/>
+						<img src="<?php echo base_url() ?>/public/assets/images/product/<?php echo $sp['img']; ?>"/>
 							<div class="hover-img">
 							<h2><?php echo $sp['name']; ?></h2>
 							<i class="fa fa-camera camera"></i>
@@ -127,7 +128,7 @@
 		<div class="container">
 			    <div class="row">
                 <div class="title">
-				<h2>Contact</h2>
+				<h2 class="orange-text">Contact</h2>
 				<p>Vui lòng để lại thông tin để chúng tôi phục vụ bạn.</p>
 				</div>
 			</div>
@@ -137,7 +138,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated" data-wow-delay=".1s">
 
 						<div class="ajax-hidden">
-						<h6 class="text-success" style="display:none">Thông tin của bạn đã được lưu lại , chúng tôi sẽ liên lạc lại với bạn sớm nhất.</h6>
+						<h4 class="text-success orange-text" style="display:none">Thông tin của bạn đã được lưu lại , chúng tôi sẽ liên lạc lại với bạn sớm nhất.</h4>
 							<div class="col-xs-12 col-sm-4 col-md-4 form-group wow fadeInUp animated">
 								<label for="c_name" class="sr-only">Name</label>
 								<input type="text" placeholder="Name" name="name" class="form-control" id="name" required="">
@@ -167,34 +168,45 @@
 	</section>
     <!-- Footer -->
     <footer id="footer">
-	<!-- =============== container =============== -->
-    <div class="container">
-			    <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-
-					<ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="https://www.facebook.com/Cty-TNHH-T%C3%B4n-Th%E1%BA%BF-D%C3%A2n-883758681729013/" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
-						<!-- <li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"><i class="fa fa-twitter"></i></a></li> -->
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-google-plus"></i></a></li>
-						<li><a data-wow-delay=".4s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-pinterest"></i></a></li>
-						<li><a data-wow-delay=".5s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><i class="fa fa-envelope"></i></a></li>
-					</ul>
-
-				</div>
+		<!-- =============== container =============== -->
+		<div class="container-fluid">
+			<div class="row">
 				<div data-wow-delay=".6s" class="col-xs-12 col-sm-6 col-md-6 wow bounceIn  animated" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceIn;">
 
-					  <section class="widget widget_text" id="text-15">
-                         <h3 class="widget-title">Thành phố Pleiku, Gia Lai</h3> <div class="textwidget">601 Trường Chinh, Chi Lăng<br>
-                        <p>Tel: 0269 3 777879<br>
-                       	    Mobile: 01 234-56786<br>
-                        E-mail: <a href="#">tonthedan@yahoo.com</a></p>
-                        <a href="https://www.google.com/maps/place/Nh%C3%A0+M%C3%A1y+T%C3%B4n+Th%E1%BA%BF+D%C3%A2n/@13.9424242,108.0085642,17z/data=!3m1!4b1!4m5!3m4!1s0x316c2048c4334439:0xfff7d52933538cd9!8m2!3d13.9424252!4d108.0107236" style="font-size:20px" target="_blank">Click để đến địa chỉ</a> →</div>
-                    </section>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.2716518549105!2d108.00856421431358!3d13.94242419660515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316c2048c4334439%3A0xfff7d52933538cd9!2zTmjDoCBNw6F5IFTDtG4gVGjhur8gRMOibg!5e0!3m2!1svi!2s!4v1660789263995!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 				</div>
+				<div data-wow-delay=".9s" class="col-xs-12 col-sm-6 col-md-6 wow bounceIn  animated" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceIn;">
+
+					<section class="widget widget_text" id="text-15" style="height:450px; padding:100px">
+						<p><strong>601 Trường Chinh, Chi Lăng, Thành phố Pleiku, Gia Lai<br>
+							Tel: 0269 3 777879<br>
+							Mobile: 01 234-56786<br>
+							E-mail: <a href="#">thehoai@gmail.com</a> </strong></p>
+						<a href="https://www.google.com/maps/place/Nh%C3%A0+M%C3%A1y+T%C3%B4n+Th%E1%BA%BF+D%C3%A2n/@13.9424242,108.0085642,17z/data=!3m1!4b1!4m5!3m4!1s0x316c2048c4334439:0xfff7d52933538cd9!8m2!3d13.9424252!4d108.0107236" style="font-size:20px" target="_blank">Click để đến địa chỉ</a> →
+						<ul class="social-links">
+							<li><a class="wow fadeInUp animated" href="https://www.facebook.com/Cty-TNHH-T%C3%B4n-Th%E1%BA%BF-D%C3%A2n-883758681729013/" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
+							<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"><i class="fa fa-twitter"></i></a></li>
+							<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-google-plus"></i></a></li>
+							<li><a data-wow-delay=".4s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-pinterest"></i></a></li>
+							<li><a data-wow-delay=".5s" class="wow fadeInUp animated" href="#" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</section>
+				</div>
 			</div>
-    </div><!-- =============== container end =============== -->
+		</div>
+		</div><!-- =============== container end =============== -->
 	</footer>
+	<a class="btn-call-now btn-call-01 cursorsHover" href="tel:02693.777879" rel="nofollow">
+		<em class="licon-telephone"><i class="fa fa-phone"></i></em>
+		<span class="cursorsHover">02693.777879</span>
+	</a>
+	<a class="btn-call-now btn-call-02 cursorsHover" href="tel:0907222444" rel="nofollow">
+		<em class="licon-telephone"><i class="fa fa-phone"></i></em>
+		<span class="cursorsHover">0907222444</span>
+	</a>
+
+	<div class="go-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
 	<!-- =============== jQuery =============== -->
     <script src="<?php echo base_url() ?>/public/assets/js/jquery.js"></script>
 	 <script src="<?php echo base_url() ?>/public/assets/js/isotope-docs.min.js"></script>
@@ -281,6 +293,11 @@ window.onload = function() {
 				},
 				success: function(data) {
 					$(".text-success").show();
+					$("#name").val("");
+					$("#email").val("");
+					$("#sdt").val("");
+					$("#description").val("");
+					setTimeout(function() { $(".text-success").hide(); }, 3000);
 				}
 			});
 		}
