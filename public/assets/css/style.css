@@ -1140,6 +1140,9 @@ blockquote {
 
 @media (min-width:768px) and (max-width:1024px)
 {
+#footer{
+	color:#ffffff;
+}
 .navbar-default .navbar-nav > li > a {
     font-size: 18px;
     padding: 50px 15px 35px;
@@ -1181,6 +1184,9 @@ width:50%;
 }
 @media (max-width:800px)
 {
+	#footer{
+		color:#ffffff;
+	}
 #about img {
     left: -40px;
     position: relative;
@@ -1194,6 +1200,9 @@ width:50%;
 }
 @media (max-width:980px)
 {
+	#footer{
+		color:#ffffff;
+	}
 #about img {
    left: 0;
     position: relative;
@@ -1232,6 +1241,9 @@ width:50%;
 {
     .for-box-crecl {
     left: 43%;
+}
+#footer{
+	color:#ffffff;
 }
 .header-text {
     background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
@@ -1315,6 +1327,9 @@ width:100%;
     .header {
     height: 600px;
 }
+#footer{
+	color:#ffffff;
+}
 .header-text {
     background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
     display: block;
@@ -1395,6 +1410,9 @@ width:100%;
 }
 @media (max-width:320px)
 {
+	#footer{
+		color:#ffffff;
+	}
 .header-text {
     background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
     display: block;

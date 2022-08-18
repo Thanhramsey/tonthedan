@@ -79,10 +79,14 @@ class Lienhe extends CI_Controller {
 
 		$email = $config_data['mail_noreply'];
 
-		$this->email->from($config_data['mail_smtp'], 'Sâm Ngọc Linh');
+		$this->email->from($config_data['mail_smtp'], 'Tôn Thế Dân');
 		$this->email->to($email);
-		$this->email->subject('Sâm Ngọc Linh thông báo !!');
-		$this->email->message('Bạn có 1 thông báo phản hồi khách hàng có Tên : <stronng>'.$name.'</strong>. Số điện thoại: '.$phone.' qua trang web. Nội dung '.$content.'. Mau liên lạc lại bạn nhé !!!!  ');
+		$this->email->subject('Tôn Thế Dân thông báo !!');
+
+		$body = $this->load->view('frontend/modules/email2',$mydata,TRUE);
+		$this->email->message($body);
+
+		// $this->email->message('Bạn có 1 thông báo phản hồi khách hàng có Tên : <stronng>'.$name.'</strong>. Số điện thoại: '.$phone.' qua trang web. Nội dung '.$content.'. Mau liên lạc lại bạn nhé !!!!  ');
 		$this->email->send();
 		echo json_encode( $mydata );
 	}

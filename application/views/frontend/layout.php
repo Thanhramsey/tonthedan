@@ -103,6 +103,7 @@
 				<div id="owl-demo" class="owl-carousel header1">
 					<div>
 						<div class="col-xs-12 col-sm-6 col-md-6 header-text">
+							<h4 style="color:orange" class="wow bounceIn animated" data-wow-delay=".30s"><span>Công ty TNHH một thành viên</span></h4>
 							<h2 class="wow bounceIn animated" data-wow-delay=".40s"><span>THẾ DÂN</span></h2>
 							<h3 class="wow bounceIn animated" data-wow-delay=".50s">NHÀ MÁY TÔN - XÀ GỖ - SẮT THÉP </h3>
 							<p class="wow bounceIn animated" data-wow-delay=".60s">601 Trường Chinh, Chi Lăng, Thành phố Pleiku</p>
@@ -110,6 +111,7 @@
 					</div>
 					<div>
 						<div class="col-xs-12 col-sm-6 col-md-6 header-text">
+							<h4 style="color:orange" class="wow bounceIn animated" data-wow-delay=".30s"><span>Công ty TNHH một thành viên</span></h4>
 							<h2 class="wow bounceIn animated" data-wow-delay=".40s"><span>THẾ DÂN</span></h2>
 							<p class="wow bounceIn animated" data-wow-delay=".50s">Chuyên kinh doanh tôn Mát (cách âm, cách nhiệt), tôn giả ngói (2 loại), tôn 5 sóng, Xà gồ từ C80 đến C300 và sắt thép. Gia công vòm, máng xối...</p>
 						</div>
@@ -303,7 +305,7 @@
 				<?php endforeach; ?>
 			</div>
 			<div class="col-md-12 wow fadeInUp animated" data-wow-delay=".2s" style="margin-top:20px">
-				<a data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="button" href="<?php echo base_url() ?>sanpham">Xem thêm</a>
+				<a data-wow-delay=".1s" class="btn btn-sm btn-block wow fadeInUp animated" type="button" href="<?php echo base_url() ?>sanpham">Xem thêm</a>
 			</div>
 		</div>
 
@@ -318,22 +320,21 @@
 					<h2>Tin tức</h2>
 					<!-- <p>Meet some of our lovely, passionate, positive people.</p> -->
 				</div>
-
-				<?php foreach ($tintuc as $row) : ?>
-					<div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp animated" data-wow-delay=".2s">
-						<div class="timg"><img src="<?php echo base_url() ?>/public/images/posts/<?php echo $row['img'] ?>" /></div>
-						<div class="t-box">
-							<a style="text-align:left;" href="<?php echo base_url() ?>tin-tuc/<?php echo $row['alias']; ?>"> <strong>
-									<h3><?php echo $row['title']; ?></h3>
-								</strong></a>
-							<p class="text-left deal-para"><?php echo $row['created'] ?></p>
+					<?php foreach ($tintuc as $row) : ?>
+						<div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp animated" data-wow-delay=".2s">
+							<div class="timg"><img src="<?php echo base_url() ?>/public/images/posts/<?php echo $row['img'] ?>" /></div>
+							<div class="t-box">
+								<a style="text-align:left;" href="<?php echo base_url() ?>tin-tuc/<?php echo $row['alias']; ?>"> <strong>
+										<h3><?php echo $row['title']; ?></h3>
+									</strong></a>
+								<p class="text-left deal-para"><?php echo $row['created'] ?></p>
+							</div>
 						</div>
-					</div>
-				<?php endforeach; ?>
-				<div class="col-md-12 wow fadeInUp animated" data-wow-delay=".2s">
-					<a data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="button" href="<?php echo base_url() ?>tin-tuc">Xem thêm</a>
-				</div>
+					<?php endforeach; ?>
 			</div>
+			<div class="wow fadeInUp animated" data-wow-delay=".2s">
+					<a data-wow-delay=".1s" class="btn btn-sm btn-block wow fadeInUp animated" type="button" href="<?php echo base_url() ?>tin-tuc">Xem thêm</a>
+				</div>
 		</div>
 		<!-- =============== container end =============== -->
 	</section>
@@ -396,7 +397,7 @@
 						<p><strong>601 Trường Chinh, Chi Lăng, Thành phố Pleiku, Gia Lai<br>
 							Tel: 0269 3 777879<br>
 							Mobile: 0907222444<br>
-							E-mail: <a href="#">thehoai@gmail.com</a> </strong></p>
+							E-mail: thehoai@gmail.com </strong></p>
 						<a href="https://www.google.com/maps/place/Nh%C3%A0+M%C3%A1y+T%C3%B4n+Th%E1%BA%BF+D%C3%A2n/@13.9424242,108.0085642,17z/data=!3m1!4b1!4m5!3m4!1s0x316c2048c4334439:0xfff7d52933538cd9!8m2!3d13.9424252!4d108.0107236" style="font-size:20px" target="_blank">Click để đến địa chỉ</a> →
 						<ul class="social-links">
 							<li><a class="wow fadeInUp animated" href="https://www.facebook.com/Cty-TNHH-T%C3%B4n-Th%E1%BA%BF-D%C3%A2n-883758681729013/" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>

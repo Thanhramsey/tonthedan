@@ -93,7 +93,7 @@
 							</div>
 							<div class="row">
 								<div class="col-md-4  wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-									<div class="item-img baguetteBoxThree gallery">
+									<div class="item-img baguetteBoxThree gallery ">
 										<a href="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img']; ?>">
 											<img src="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img']; ?>" alt="image" style="height:100%;border-radius:20px;width:100%">
 										</a>
