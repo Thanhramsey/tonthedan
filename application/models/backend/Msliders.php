@@ -28,7 +28,13 @@ class Msliders extends CI_Model {
         $this->db->where('trash', 1);
         $this->db->where('id', $id);
         $query = $this->db->get($this->table);
-        return $query->row_array();   
+        return $query->row_array();
+    }
+	public function slider_trash_detail($id)
+    {
+        $this->db->where('id', $id);
+        $query = $this->db->get($this->table);
+        return $query->row_array();
     }
     //RECYCLEBIN
     public function slider_trash_count()

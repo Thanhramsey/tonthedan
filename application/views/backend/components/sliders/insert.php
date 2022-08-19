@@ -27,26 +27,24 @@
 								</div>
 								<div class="form-group">
 									<label>Ảnh sản phẩm<span class="maudo">(*)</span></label>
-									<input type="file" id="image_list" name="img" onchange="loadFile(event)">
+									<input type="file" id="image" name="img" onchange="loadFile(event)" style="display:none">
+									<label for="image" class="btn-upload-img">Chọn file</label>
 									<div class="anh" style="width:300px; height:280px; border:1px dashed black; padding: 5px">
 										<!-- Chứa ảnh ở đây -->
 										<img style="width:100%; height:100%;border-radius:10px" id="output" />
 									</div>
 								</div>
 								<div class="form-group">
-									<label>Hình ảnh thêm<span style="color:red;font-style:italic">(* tối đa 2 ảnh)</span></label>
-									<input type="file"  id="image_list" name="image_list[]" multiple>
+									<label>Hình ảnh thêm<span style="color:red;font-style:italic">(* tối đa 3 ảnh)</span></label>
+									<input type="file"  id="image_list" name="image_list[]" multiple onchange="loadMulFile(event)" style="display:none">
+									<label for="image_list" class="btn-upload-img">Chọn file</label>
+									<div class="anh" style ="width:100%; height:280px; border:1px dashed black;border-radius:10px; padding: 5px; margin-bottom:10px">
+										<!-- Chứa ảnh ở đây -->
+										<img style="width:32%;margin-right:5px;border-right:1px solid black; height:100%;border-radius:10px" id="output1" />
+										<img style="width:32%;margin-right:5px;border-right:1px solid black; height:100%;border-radius:10px" id="output2" />
+										<img style="width:32%;margin-right:5px; height:100%;border-radius:10px" id="output3" />
+									</div>
 								</div>
-
-								<!-- <div class="form-group">
-                                    <label>Hình đại diện</label>
-                                    <input type="file"  id="image_list" name="img" required style="width: 100%">
-                                </div>
-								<div class="form-group">
-									<label>Hình ảnh sản phẩm</label>
-									<input type="file"  id="image_list" name="image_list[]" multiple required>
-								</div> -->
-
 								<div class="form-group">
 									<label>Chi tiết sản phẩm<span class="maudo">(*)</span></label>
 									<textarea name="detail" id="detail" class="form-control"></textarea>
@@ -84,7 +82,7 @@
 </div>
 
 
-
+<script src="public/js/jquery-2.2.3.min.js"></script>
 <script>
 	var loadFile = function(event) {
 		var output = document.getElementById('output');
@@ -93,4 +91,54 @@
 			URL.revokeObjectURL(output.src) // free memory
 		}
 	};
+	var loadMulFile = function(event) {
+		var output1 = document.getElementById('output1');
+		var output2 = document.getElementById('output2');
+		var output3 = document.getElementById('output3');
+
+		if(event.target.files[0]){
+			output1.style.display = "";
+			output1.src = URL.createObjectURL(event.target.files[0]);
+			output1.onload = function() {
+				URL.revokeObjectURL(output1.src) // free memory
+			}
+		}else{
+			output1.src = "";
+			output1.onload = function() {
+				URL.revokeObjectURL(output1.src) // free memory
+			}
+			output1.style.display = "none";
+		}
+
+		if(event.target.files[1]){
+			output2.style.display = "";
+			output2.src = URL.createObjectURL(event.target.files[1]);
+			output2.onload = function() {
+				URL.revokeObjectURL(output2.src) // free memory
+			}
+		}else{
+			output2.src = "";
+			output2.onload = function() {
+				URL.revokeObjectURL(output2.src) // free memory
+			}
+			output2.style.display = "none";
+		}
+
+		if(event.target.files[2]){
+			output3.style.display = "";
+			output3.src = URL.createObjectURL(event.target.files[2]);
+			output3.onload = function() {
+				URL.revokeObjectURL(output3.src) // free memory
+			}
+		}else{
+			output3.src = "";
+			output3.onload = function() {
+				URL.revokeObjectURL(output3.src) // free memory
+			}
+			output3.style.display = "none";
+		}
+	};
+
+
+
 </script>

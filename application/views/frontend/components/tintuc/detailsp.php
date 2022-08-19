@@ -97,27 +97,38 @@
 										<a href="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img']; ?>">
 											<img src="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img']; ?>" alt="image" style="height:100%;border-radius:20px;width:100%">
 										</a>
-										<div class="row" style="height:60px; margin-top:10px">
-											<div class="col-md-6 wow fadeIn">
+										<div class="row" style="margin-top:10px">
+											<div class="col-md-4 wow fadeIn">
 												<?php if(!empty($row['img1'])) :?>
 													<a href="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img1']; ?>">
 														<img src="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img1']; ?>" alt="image" style="height:100%;width:100%">
 													</a>
 												<?php else: ?>
-													<a href="<?php echo base_url() ?>public/assets/images/product/default.png">
+													<!-- <a href="<?php echo base_url() ?>public/assets/images/product/default.png">
 														<img src="<?php echo base_url() ?>public/assets/images/product/default.png?>" alt="image" style="height:100%;width:100%">
-													</a>
+													</a> -->
 												<?php endif;?>
 											</div>
-											<div class="col-md-6 wow fadeIn">
+											<div class="col-md-4 wow fadeIn">
 												<?php if(!empty($row['img2'])) :?>
 													<a href="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img2']; ?>">
 														<img src="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img2']; ?>" alt="image" style="height:100%;width:100%">
 													</a>
 												<?php else: ?>
-													<a href="<?php echo base_url() ?>public/assets/images/product/default.png">
+													<!-- <a href="<?php echo base_url() ?>public/assets/images/product/default.png">
 														<img src="<?php echo base_url() ?>public/assets/images/product/default.png?>" alt="image" style="height:100%;width:100%">
+													</a> -->
+												<?php endif;?>
+											</div>
+											<div class="col-md-4 wow fadeIn">
+												<?php if(!empty($row['img3'])) :?>
+													<a href="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img3']; ?>">
+														<img src="<?php echo base_url() ?>public/assets/images/product/<?php echo $row['img3']; ?>" alt="image" style="height:100%;width:100%">
 													</a>
+												<?php else: ?>
+													<!-- <a href="<?php echo base_url() ?>public/assets/images/product/default.png">
+														<img src="<?php echo base_url() ?>public/assets/images/product/default.png?>" alt="image" style="height:100%;width:100%">
+													</a> -->
 												<?php endif;?>
 											</div>
 										</div>

@@ -82,7 +82,11 @@ class Sliders extends CI_Controller {
 				}
 			}
 			$name_array = explode('#',$img);
-			if(count($name_array) >= 2){
+			if(count($name_array) >= 3){
+				$mydata['img1']=$name_array[0];
+				$mydata['img2']=$name_array[1];
+				$mydata['img3']=$name_array[2];
+			}else if(count($name_array) == 2){
 				$mydata['img1']=$name_array[0];
 				$mydata['img2']=$name_array[1];
 			}else{
@@ -155,7 +159,12 @@ class Sliders extends CI_Controller {
 				}
 			}
 			$name_array = explode('#',$img);
-			if(count($name_array) >= 2){
+			if(count($name_array) >= 3){
+				$mydata['img1']=$name_array[0];
+				$mydata['img2']=$name_array[1];
+				$mydata['img3']=$name_array[2];
+			}
+			else if(count($name_array) == 2){
 				$mydata['img1']=$name_array[0];
 				$mydata['img2']=$name_array[1];
 			}else{
@@ -171,16 +180,19 @@ class Sliders extends CI_Controller {
 			$filename= $this->data['row']['img'];
 			$filename1= $this->data['row']['img1'];
 			$filename2= $this->data['row']['img2'];
-			if(!empty($filename1) && !empty($mydata['img1'])) {
+			$filename3= $this->data['row']['img3'];
+			if(!empty($filename1)) {
 				unlink("public/assets/images/product/$filename1");
 			}
-			if(!empty($filename2) && !empty($mydata['img2'])) {
+			if(!empty($filename2)) {
 				unlink("public/assets/images/product/$filename2");
+			}
+			if(!empty($filename3)) {
+				unlink("public/assets/images/product/$filename3");
 			}
 			if(!empty($filename) && !empty($mydata['img'])) {
 				unlink("public/assets/images/product/$filename");
 			}
-			echo "<pre>---In ra---\n".print_r($mydata)."</pre>";
 			$message = "Cập nhật sản phẩm thành công";
 			$this->session->set_flashdata('success', $message);
 			redirect('admin/sliders/','refresh');
@@ -231,14 +243,25 @@ class Sliders extends CI_Controller {
 
 	public function delete($id)
 	{
-		$row=$this->Msliders->slider_detail($id);
+		$row=$this->Msliders->slider_trash_detail($id);
 		$this->load->helper('file');
-			$filename= $row['img'];
-			if (unlink("public/assets/images/product/$filename")) {
-				$message = "Cập nhật sản phẩm thành công";
-			} else {
-				$message = 'There was a error deleting the file ' . $filename;
-			}
+		$filename= $row['img'];
+		$filename1= $row['img1'];
+		$filename2= $row['img2'];
+		$filename3= $row['img3'];
+		if(!empty($filename1)) {
+			unlink("public/assets/images/product/$filename1");
+		}
+		if(!empty($filename2)) {
+			unlink("public/assets/images/product/$filename2");
+		}
+		if(!empty($filename3)) {
+			unlink("public/assets/images/product/$filename3");
+		}
+		if(!empty($filename)) {
+			unlink("public/assets/images/product/$filename");
+		}
+
 		$this->Msliders->slider_delete($id);
 		$this->session->set_flashdata('success', 'Xóa sản phẩm thành công');
 		redirect('admin/sliders/recyclebin','refresh');
